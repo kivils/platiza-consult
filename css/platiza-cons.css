@@ -1,0 +1,454 @@
+/*
+Julia Sesyunina
+idwebkivils@gmail.com
+skype: idweb_pm_julia
+http://demo.artelx.ru
+*/
+
+.bordered_text {
+    margin-bottom:47px;
+    padding-bottom:50px;
+    position:relative;
+}
+.bordered_text:after {
+    content:"";
+    width:100px;
+    height:2px;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    margin-left:-50px;
+    background:#149b49;
+}
+.bordered_text + h2 {
+    line-height:1;
+}
+
+.wrapper_wr {
+    text-align:center;
+}
+.wrapper_wr > section {
+    padding-top:60px;
+    padding-bottom:60px;
+    position:relative;
+    z-index:7;
+}
+.wrapper_wr > section.cons_experts {
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.topbar_wr {
+    line-height:37px;
+    min-height:70px;
+    padding:16px 0 5px;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:9;
+    -webkit-transform: translateZ(0);
+}
+.topbar_wr:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:.95;
+    z-index:2;
+    background:#fff;
+}
+.topbar_wr * {
+    vertical-align:top;
+}
+.topbar_wr .container-fluid {
+    position:relative;
+    z-index:3;
+}
+.topbar_wr a {
+    color:#414243;
+    font-weight:bold;
+    margin-left:25px;
+    display:inline-block;
+}
+.topbar_wr a:first-child {
+    margin-left:0;
+}
+
+/* Main slide */
+.cons_main {
+    color:#fff;
+    min-height:710px;
+    position:relative;
+    z-index:8;
+    background:url(../img/main_slide_bg.jpg) no-repeat 50% 0;
+}
+.cons_main header {
+    padding-top:135px;
+}
+.cons_main h1 {
+    font-size: 60px;
+    line-height:60px;
+    font-weight:bold;
+    color:#fff;
+}
+.cons_main_text {
+    font-size:20px;
+    margin:0 0 72px;
+}
+
+/* About */
+.cons_about {
+    min-height:770px;
+    background:#f9faf7;
+}
+.cons_about h2 {
+    margin:0 0 64px;
+}
+.cons_themes {
+    margin-bottom:100px;
+}
+.cons_themes ul {
+    margin-bottom:0;
+    padding:0;
+}
+.cons_themes ul li {
+    list-style:none;
+    margin:0;
+    padding:0 15px;
+    float:left;
+    text-align:center;
+}
+.cons_themes ul li a {
+    font-size:20px;
+    line-height:1;
+    font-weight:bold;
+    padding-top:38px;
+    display:inline-block;
+    position:relative;
+    border-bottom:1px dashed #149b49;
+}
+.cons_themes ul li a:hover {
+    border-color:transparent;
+    text-decoration:none;
+}
+.cons_themes ul li a:before {
+    content:"";
+    width:100%;
+    max-width:40px;
+    height:36px;
+    display:block;
+    position:absolute;
+    top:0;
+    left:50%;
+    margin-left:-20px;
+    background:transparent url(../img/cons_icons.png) no-repeat;
+}
+.cons_themes ul li a.cons_money:before {
+    background-position:50% 0;
+}
+.cons_themes ul li a.cons_proper:before {
+    background-position:50% -40px;
+}
+.cons_themes ul li a.cons_taxes:before {
+    background-position:50% -80px;
+}
+.cons_themes ul li a.cons_insure:before {
+    background-position:50% -120px;
+}
+.cons_themes ul li a.cons_pens:before {
+    background-position:50% -160px;
+}
+.cons_themes ul li a.cons_ipoteka:before {
+    background-position:50% -200px;
+}
+.cons_themes ul li a.cons_loans:before {
+    background-position:50% -240px;
+}
+
+/* Answers */
+.cons_answers {
+    position:relative;
+}
+.cons_answers .item {
+    min-height:145px;
+}
+.item_quest {
+    width:33%;
+    padding:0 5%;
+    float:left;
+}
+.cons_quest_title {
+    font-family:'PTSansItalic', Arial, sans-serif;
+    font-size:20px;
+    line-height:25px;
+    font-weight:bold;
+    font-variant:italic;
+    margin-bottom:5px;
+}
+.cons_quest_title a {
+    color:#666;
+}
+.cons_quest_info {
+    font-size:16px;
+    color:#999;
+    font-weight:normal;
+}
+
+/* Experts */
+.cons_experts {
+    min-height:562px;
+    background:#fff;
+}
+.experts_items {
+    padding-top:10px;
+}
+.cons_experts ul {
+    height:282px;
+}
+.cons_experts .item {
+    color:#999;
+    font-weight:bold;
+    min-height:278px;
+}
+.experts_items .item img {
+    margin:0 auto 42px;
+}
+
+/* Questions Form */
+.cons_form {
+    min-height:820px;
+    background:#f9faf7 url(../img/cons_questions_bg.jpg) repeat 0 0;
+}
+.cons_form form {
+    max-width:510px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+}
+.cons_form label {
+    padding-left:17px;
+    padding-right:17px;
+}
+.cons_form textarea {
+    height:190px;
+    max-height:300px;
+}
+
+/* FAQ Block   */
+.cons_questions {
+    min-height:785px;
+    background:#fff;
+}
+.questions_items {
+    margin-bottom:45px;
+}
+.questions_items .item {
+    min-height:380px;
+    padding-bottom:10px;
+}
+.quest_line {
+    text-align:left;
+}
+.quest_user {
+    font-weight:bold;
+    color:#333;
+    margin-bottom:10px;
+    padding-top:17px;
+}
+.quest_user img {
+    max-width:100%;
+    height:auto!important;
+    margin-bottom:10px;
+}
+.quest_user span {
+    font-weight:normal;
+    color:#999;
+    display:block;
+}
+.block_quest .quest_user {
+    text-align:right;
+}
+.quest_text {
+    font-size:20px;
+    line-height:24px;
+    color:#333;
+    min-height:90px;
+    margin-bottom:10px;
+    padding:37px 40px;
+    display:inline-block;
+    position:relative;
+    border-radius:24px;
+    background:#f4f4f2;
+}
+.block_quest .quest_text {
+    font-weight:bold;
+    color:#666;
+}
+.quest_text:after {
+    content:"";
+    width:14px;
+    height:14px;
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    position:absolute;
+    top:40px;
+    background:#f4f4f2;
+}
+.block_quest .quest_text:after {
+    left:-7px;
+}
+.block_ans .quest_text:after {
+    right:-7px;
+}
+.quest_text p {
+    margin:10px 0 0;
+}
+.quest_text p:first-child {
+    margin:0;
+}
+.readmore_link {
+    font-size:16px;
+    line-height:1;
+    display:inline-block;
+    border-bottom:1px dotted #149b49;
+}
+.readmore_link:hover {
+    text-decoration:none;
+    border-color:transparent;
+}
+.footer_wr {
+    padding:45px 0;
+    background:#f9faf7;
+}
+
+/* jCarousel */
+.jcarousel-wrapper {
+    position:relative;
+}
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.jcarousel li {
+    width: 200px;
+    padding:0 10px;
+    float: left;
+    overflow:hidden;
+}
+.jcarousel-pagination {
+    padding-left: 0;
+    margin-bottom:0;
+    text-align: center;
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin: 0;
+}
+
+.jcarousel-pagination a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    float:left;
+    text-indent: -9999px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #cecece;
+    border-radius: 10px;
+}
+
+.jcarousel-pagination a.active {
+    border-color:#149b49;
+    background-color: #149b49;
+}
+.jcarousel-pagination a:focus {
+    outline:none;
+    outline-offset:0;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    h1, .h1, h2, .h2 {
+        font-size:24px;
+        line-height:27px;
+    }
+    .topbar_wr,
+    .topbar_wr .btn {
+        font-size:13px;
+    }
+    .topbar_wr a {
+        margin-left:10px;
+    }
+    .wrapper_wr > section {
+        padding-top:30px;
+        padding-bottom:30px;
+    }
+    .cons_main header {
+        padding-top:90px;
+    }
+    .cons_main h1 {
+        font-size:40px;
+        line-height:40px;
+    }
+    .cons_themes {
+        margin-bottom:60px;
+    }
+    .cons_themes ul li {
+        margin-bottom:20px;
+    }
+    .cons_themes ul li a {
+        font-size:13px;
+    }
+
+    .questions_items .item {
+        font-size:14px;
+    }
+    .quest_text {
+        font-size:16px;
+        line-height:21px;
+        padding:18px 20px;
+    }
+    .readmore_link {
+        font-size:14px;
+    }
+}
+@media (max-width: 500px) {
+    .cons_themes ul li a {
+        font-size:12px;
+        font-weight:normal;
+    }
+    .questions_items .item {
+        font-size:12px;
+    }
+}
+@media (min-width:768px) and (max-width: 992px) {
+    .topbar_wr a {
+        margin-left:10px;
+    }
+}
+@media (min-width: 993px) and (max-width: 1400px) {
+    .topbar_wr a {
+        font-size:15px;
+        margin-left:10px;
+    }
+}
